@@ -1,0 +1,745 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --main-color:rgb(224,110,37);
+  --title-font:'Carter One', cursive;
+  --primary-font:'Roboto', sans-serif;
+}
+
+header {
+  width:100%;
+  height:6vh;
+  display: flex;
+  background-color: #000;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+main {
+  padding:0 5%;
+  position: relative;
+}
+
+
+.social-link {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  right:20%;
+}
+
+.social-link li {
+  margin-right:13px;
+}
+
+.social-link li a {
+  font-size: 1.1rem;
+}
+
+.logo {
+  color:#ddd;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  color:var(--main-color);
+}
+
+#search-icon {
+  margin:0 10px;
+}
+
+
+input {
+margin:0 0 5px 0;
+border:0;
+padding:2px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  margin:3% 0 2% 0;
+  
+}
+
+.intro h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: var(--primary-font);
+  color:var(--main-color);
+  letter-spacing: 0.09em;
+  font-weight: 400;
+  text-transform: uppercase;
+  animation: drop 1.3s ease;
+}
+
+span {
+display: block;
+font-size: 1.5rem;
+font-family: var(--title-font);
+color:#000;
+letter-spacing: 0;
+text-transform: none;
+
+}
+
+.option-links {
+  display: flex;
+  justify-content: center;
+}
+
+.option-link {
+  list-style: none;
+  display: flex;
+}
+
+.option-link li {
+  margin:1rem;
+}
+
+.option-link li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: var(--primary-font);
+  color:#777;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  transition: 0.6s;
+}
+
+.option-link li a:hover {
+  color:var(--main-color);
+}
+
+.image-intro::before {
+  display: block;
+  content:"";
+  width:65%;
+  height:3px;
+  margin:-8px auto 5px auto;
+  background: #000;
+}
+
+.image-intro::after {
+  display: block;
+  content:"";
+  width:65%;
+  height:3px;
+  margin:5px auto;
+  background: #000;
+}
+
+figure {
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(chef-copy.jpg);
+  background-size: cover;
+  background-position: center;
+  width:65%;
+  height:60vh;
+  margin:20px auto;
+  position: relative;
+}
+
+.hero-text {
+  color:#fff;
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom:8%;
+}
+
+.image-title {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  margin-bottom: 6%;
+
+}
+
+.hero-text h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin:20px 0 15px 0;
+
+}
+
+.hero-text p {
+  font-size: 0.9rem;
+  font-family: var(--primary-font);
+  font-weight: normal;
+  color:rgba(224,228,228,.88);
+  width:80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* OUR CHEFS' SECTION*/
+
+.chef-section {
+  width:80%;
+  margin:5% auto;
+}
+
+.intro-chefs {
+  display: flex;
+  justify-content: center;
+  margin-bottom:8px;
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-size: 2.3rem;
+  letter-spacing: 0.02em;
+  font-weight: lighter;
+  color:var(--main-color);
+}
+
+.chef-team   {
+  display: flex;
+  height:100%;
+  justify-content: space-around;
+}
+
+.chefs {
+  margin:20px 30px 20px 30px;
+}
+
+.chefs img {
+  width:100%;
+  height: auto;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.chefs img:hover {
+  transform: scale(1);
+}
+
+.info {
+  display: block;
+  margin:15px 0;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+.info h3 {
+  font-size: 1.4rem;
+  padding:8px;
+}
+
+.info p {
+  font-size: 1.1rem;
+  color:rgb(51,51,51);
+  padding:5px;
+}
+
+.food {
+  color:var(--main-color);
+  font-size: 1.3rem;
+  vertical-align: middle;
+  margin:-3px 8px 0 0;
+}
+
+/*BUTTON*/
+
+.know-me {
+  display: block;
+ margin:20px 0 10px 0;
+ text-decoration: none;
+ font-size: 0.9rem;
+ letter-spacing: 1px;
+ word-spacing: 2px;
+ color:#777;
+ transition: 0.5s;
+}
+
+.know-me:hover {
+  color:var(--main-color);
+}
+
+/*DISH SECTIONS*/
+.dish-section {
+  margin:3% 0;
+}
+
+
+.photo-showcase {
+  display: flex;
+  list-style:none;
+  width:90%;
+  margin:auto;
+}
+
+.photo-showcase li {
+  width:25%;
+  height: auto;
+  background: #000;
+  overflow: hidden;
+}
+
+.photo-showcase li img {
+  width:100%;
+  height: auto;
+  opacity: 0.8;
+  transform: scale(1.5);
+  transition: 0.5s ease;
+}
+
+.photo-showcase li img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.star-icons {
+  text-align: center;
+}
+
+.star {
+  font-size: 1.2rem;
+  margin:0 0 20px 0;
+  color:rgba(224,110,37,.76);
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:0 0 35px 0;
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  color:#777;
+  line-height: 1.4;
+}
+
+/* LOCATION SECTION */
+
+.location-section {
+  margin:8% 0;
+
+}
+
+.location-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin:1% 0 0 3%;
+}
+
+.location_1 img {
+  width:90%;
+  height: auto;
+}
+
+.location-box {
+  margin-top:12px;
+}
+
+.location-box h4 {
+  font-size: 1.1rem;
+  font-family: var(--primary-font);
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.location-box li {
+  list-style: none;
+  margin-top:10px;
+
+}
+
+.location-box li a {
+  text-decoration: none;
+  color:#777;
+  transition: 0.5s;
+}
+
+.location-box li a:hover {
+  color:var(--main-color);
+}
+
+.location-icon,
+.twitter-icon {
+  color:var(--main-color);
+  font-size: 1.1rem;
+  vertical-align: middle;
+  margin:-4px 6px 0 0;
+}
+
+footer {
+  width:100%;
+  min-height:40vh;
+  padding:2rem;
+  display: flex;
+  background: #000;
+  font-family: var(--primary-font);
+}
+
+.list-links {
+  list-style: none;
+   margin-left:1rem;
+}
+
+.list-links li {
+  margin:1.2rem;
+}
+
+.list-links li a {
+  text-decoration: none;
+  color:var(--main-color);
+
+}
+
+.main-address {
+  margin:1rem;
+  position: relative;
+  left:13%;
+}
+
+.main-address p {
+ margin-bottom:0.7rem;
+ color:var(--main-color);
+ font-size: 0.9rem;
+ text-transform: uppercase;
+
+}
+.maps {
+  width:55%;
+}
+
+.newsletter {
+  margin:0.8rem 2rem 0 0;
+}
+
+label {
+  font-size: 1.3rem;
+  color:var(--main-color);
+  font-weight: normal;
+  display: inline-block;
+  margin-bottom:1rem;
+}
+
+.input-field {
+  width:50%;
+  height:20%;
+  display: inline-block;
+  background: #ddd;
+  font-size: 0.8rem;
+}
+
+.submit {
+  display: inline-block;
+  width:30%;
+  height:20%;
+  font-size: 1rem;
+  background: var(--main-color);
+  border:none;
+}
+
+
+/* KEYFRAMES */
+
+@keyframes drop {
+  0% {
+    transform: translateY(-45px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width:768px) {
+  .intro {
+    padding-bottom:3rem;
+  }
+  .line {
+    width:30px;
+    height:3px;
+    background-color: #000;
+    margin:5px;
+  }
+
+  .hamburger {
+     position: absolute;
+     top:3%;
+     left:48%;
+     cursor: pointer;
+     z-index: 3;
+  }
+
+  .option-link {
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    top:26%;
+    right:14%;
+    background-color: rgb(51,51,51);
+    height:50vh;
+    width:40%;
+    padding-top:1rem;
+    border-radius: 3px;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(100px at -90% -15%);
+    -webkit-clip-path:circle(100px at -90% -15%);
+    transition: all 1.5s ease;
+  }
+
+  .option-link.open {
+    clip-path: circle(1000px at 90% -15%);
+    -webkit-clip-path:circle(1000px at 90% -15%);
+    pointer-events: all;
+}
+
+
+.chef-section {
+  margin:8% auto;
+}
+
+
+.info {
+  display: inline-block;
+  width:160px;
+}
+
+
+.info h3 {
+  font-size: 1rem;
+}
+
+.info p {
+  font-size: 1rem;
+}
+  
+.location-section {
+  margin:12% auto;
+
+}
+
+.location-list {
+  flex-direction: column;
+  margin-left:8rem;
+  
+}
+
+.location_1 img {
+  width:75%;
+  height: auto;
+}
+
+.location_1 {
+  margin:1.6rem 0;
+}
+
+.location-box h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  
+}
+
+.location-box li  {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.location-icon,
+.twitter-icon {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  margin:-3px 6px 0 0;
+}
+
+
+.main-address {
+  left:5%;
+}
+
+label {
+  font-size:1.2rem;
+  text-align: justify;
+}
+
+}
+
+@media screen and (max-width:375px) {
+
+  header {
+    height:7vh;
+  }
+
+  .social-link {
+    right:2%;
+    top:2%;
+  }
+
+  .intro {
+    margin:2.5rem 0;
+  }
+
+  .hamburger {
+    top:2.3%;
+    left:45%;
+  }
+
+  .option-link {
+    top:34%;
+    right:10%;
+    width:45%;
+  }
+
+  .option-link li a {
+    font-size: 0.7rem;
+  }
+
+  figure {
+    width:90%;
+    position: relative;
+  }
+
+  .image-intro::before {
+    width:90%;
+  }
+
+  .image-intro::after {
+    width:90%;
+  }
+
+  .image-title {
+    font-size: 2.8rem;
+    position: absolute;
+    bottom:12rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    position: absolute;
+    bottom:8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+    margin-bottom:1rem;
+  }
+
+  .chef-section {
+    width:100%;
+    margin:2.5rem auto 0 auto;
+  }
+
+ h2 {
+   font-size: 1.8rem;
+ }
+
+ .description {
+   font-size: 0.9rem;
+   line-height: 1.6;
+ }
+
+ .chef-team   {
+   width:100%;
+  flex-direction: column;
+  margin-left:1.5rem;
+}
+
+.info {
+  margin:1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+}
+
+.info p {
+  font-size: 0.9rem;
+}
+
+.chefs img {
+  width:80%;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.dish-section {
+  margin:2rem 0 3rem 0;
+}
+
+.location-section {
+  margin-top:5rem;
+}
+
+.photo-showcase {
+  width:100%;
+}
+
+.location-list {
+  margin-left:0.5rem;
+}
+
+.location_1 {
+  margin-bottom:2rem;
+}
+.location_1 img {
+  width:100%;
+}
+
+.location-box h4 {
+  font-size: 1.1rem;
+}
+
+.location-box {
+  margin:1.1rem 0 0 0;
+}
+
+footer {
+  display: block;
+  padding:1rem 0 0 0;
+  min-height: 75vh;
+}
+
+.list-links {
+  display: flex;
+}
+
+.list-links li {
+  margin-right:0.1rem;
+}
+
+.list-links li a {
+  font-size: 0.9rem;
+}
+
+.main-address {
+  margin-top:2rem;
+  left:9%;
+}
+
+.maps {
+  width:80%;
+}
+
+.newsletter {
+  margin:3rem 2rem 0 2rem;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+.input-field {
+  width:60%;
+  padding:0.4rem;
+}
+
+.submit {
+  padding:0.3rem;
+}
+
+
+}
